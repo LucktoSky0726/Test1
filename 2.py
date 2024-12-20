@@ -12,7 +12,6 @@ def plot_robot_direction(ax, x, directions):
     current_y = 0
 
     for dest_y, angle, line_style in directions:
-        # Plot the main path
         ax.plot([current_x, current_x], [current_y, dest_y], color='blue', linewidth=8)
 
         # Plot the connecting path segments
